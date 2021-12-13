@@ -2,7 +2,7 @@ Vue.createApp({
   data() {
     return {
       goals: [],
-      enteredValue: "",
+      enteredValue: "a",
     };
   },
   methods: {
