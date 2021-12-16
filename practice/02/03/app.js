@@ -22,7 +22,9 @@ const app = Vue.createApp({
     resetInput() {
       this.name = "";
     },
-    outputFullName() {
+  },
+  computed: {
+    fullName() {
       return this.name ? this.name + " " + "Kim" : "";
     },
   },
