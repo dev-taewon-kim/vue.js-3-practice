@@ -13,14 +13,14 @@ const app = Vue.createApp({
     reduce(n) {
       this.counter = this.counter - n;
     },
-    setName(e) {
-      this.name = e.target.value;
-    },
     submitForm(e) {
       alert("Submitted!");
     },
     confirmName() {
       this.confirmedName = this.name;
+    },
+    resetInput() {
+      this.name = "";
     },
   },
 });
