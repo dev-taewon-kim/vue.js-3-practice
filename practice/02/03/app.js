@@ -17,16 +17,16 @@ const app = Vue.createApp({
       this.name = "";
     },
   },
-  // watch: {
-  //   counter(value) {
-  //     if (value > 50) {
-  //       const that = this;
-  //       setTimeout(() => {
-  //         that.counter = 0;
-  //       }, 1000);
-  //     }
-  //   },
-  // },
+  watch: {
+    counter(value) {
+      if (value > 50) {
+        const that = this;
+        setTimeout(() => {
+          that.counter = 0;
+        }, 1000);
+      }
+    },
+  },
   computed: {
     getFullName() {
       if (this.name === "" || this.lastName === "") {
