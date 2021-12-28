@@ -37,3 +37,13 @@ proxy.message = "Hello!!!";
 
 console.log(proxy.message);
 console.log(proxy.longMessage);
+
+const app2 = Vue.createApp({
+  data() {
+    return {
+      favoriteMeal: "닭발",
+    };
+  },
+});
+
+app2.mount("#app2");
